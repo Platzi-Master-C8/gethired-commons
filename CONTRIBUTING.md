@@ -51,7 +51,7 @@ git checkout -b hotfix-1
 
 ### Commits naming standard
 
-<type>[optional scope]: <description>
+\<type\>[optional scope]: \<description\>
 
 [optional body]
 
