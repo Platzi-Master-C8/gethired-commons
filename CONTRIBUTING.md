@@ -66,6 +66,8 @@ git commit -m 'feat: Added logger class to use a logger service'
 - Type Name - feat
 - Description - Added logger class to use a logger service
 
+More info: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
 ## Pull Requests
 
 ### Before creating a pull request please
