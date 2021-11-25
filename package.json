@@ -5,7 +5,9 @@
     "lint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
     "test": "jest --config ./config/jest.config.js",
     "test:watch": "jest --config ./config/jest.config.js --watch-all",
-    "test:coverage": "jest --config ./config/jest.config.js --coverage"
+    "test:coverage": "jest --config ./config/jest.config.js --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
@@ -15,6 +17,10 @@
     "@babel/preset-react": "7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/dom": "8.11.1",
     "@testing-library/jest-dom": "5.15.0",
     "@testing-library/react": "12.1.2",
@@ -47,5 +53,6 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {}
 }
