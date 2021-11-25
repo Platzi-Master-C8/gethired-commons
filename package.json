@@ -1,20 +1,25 @@
 {
   "name": "gethired",
-  "private": true,
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook",
     "analize": "webpack-bundle-analyzer dist/stats.json",
     "lint": "eslint ./src/**/*.js[x] && prettier --check \"src/**/*.(jsx|js)\"",
     "lint:fix": "eslint ./src/**/*.js[x] --fix && prettier -w \"src/**/*.(jsx|js)\"",
     "test": "jest --config ./config/jest.config.js",
     "test:watch": "jest --config ./config/jest.config.js --watch-all",
     "test:coverage": "jest --config ./config/jest.config.js --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
     "prepare": "husky install && git config commit.template .github/GIT_COMMIT_TEMPLATE",
     "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
@@ -34,8 +39,11 @@
     "@types/react": "17.0.34",
     "@typescript-eslint/eslint-plugin": "5.3.1",
     "@typescript-eslint/parser": "5.3.1",
+    "babel-eslint": "10.1.0",
     "babel-loader": "8.2.3",
     "babel-preset-minify": "0.5.1",
+    "clean-webpack-plugin": "4.0.0",
+    "css-loader": "6.5.1",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.0",
     "eslint-config-airbnb-typescript": "15.0.0",
@@ -45,23 +53,30 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-jest": "25.2.4",
     "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.27.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-testing-library": "5.0.0",
+    "html-loader": "3.0.1",
+    "html-webpack-plugin": "5.5.0",
     "husky": ">=6",
     "jest": "27.3.1",
+    "lint-staged": ">=10",
+    "mini-css-extract-plugin": "2.4.5",
+    "node-sass": "6.0.1",
     "prettier": "2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "sass": "1.43.4",
+    "sass-loader": "12.3.0",
+    "style-loader": "3.3.1",
     "tsconfig-paths-webpack-plugin": "3.5.1",
     "typescript": "4.4.4",
     "webpack": "5.64.0",
-    "webpack-cli": "4.9.1"
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.5.0"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {}
   "lint-staged": {
     "src/**/*.js[x]": [
       "eslint --cache --fix",
