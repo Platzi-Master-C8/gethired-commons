@@ -5,12 +5,23 @@
   "description": "Platzi Master C8 commons",
   "main": "./dist/index",
   "author": "Platzi Master C8",
+  "license": "MIT",
   "keywords": [
     "platzi master",
     "react",
     "gethired-commons",
     "platzi",
     "components"
+  ],
+  "contributors": [
+    {
+      "name": "Kevin Cruz",
+      "github": "https://github.com/kevfarid"
+    },
+    {
+      "name": "Yadu Lopez",
+      "github": "https://github.com/yadurani"
+    }
   ],
   "repository": {
     "type": "git",
@@ -22,7 +33,7 @@
   },
   "homepage": "https://github.com/Platzi-Master-C8/gethired-commons",
   "scripts": {
-    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../babel.config src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --no-copy-ignored"
+    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../babel.config src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --ignore '**/*.stories.@(js|jsx|ts|tsx)' --no-copy-ignored"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0",
