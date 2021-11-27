@@ -5,4 +5,4 @@ export default {
   component: ButtonExample,
 };
 
-export const Default = () => <ButtonExample>Button Examples</ButtonExample>;
+export const Default = () => <ButtonExample>Button Dafault</ButtonExample>;
