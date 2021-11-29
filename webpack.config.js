@@ -6,6 +6,7 @@ module.exports = {
     modules: [__dirname, 'node_modules'],
     alias: {
       '@gethired/commons': path.resolve(__dirname, './packages/components/src'),
+      '@master-c8/theme': path.resolve(__dirname, './packages/theme/src'),
     },
     extensions: ['.js', '.ts', '.tsx', '.d.ts'],
   },

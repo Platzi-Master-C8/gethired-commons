@@ -1,7 +1,12 @@
-import { forwardRef } from 'react';
+import { Button } from '@mui/material';
+import { ThemeProvider } from '@master-c8/theme';
 
-const ButtonExample = forwardRef(function ButtonExample(props, ref) {
-  return <button ref={ref} type="button" {...props} />;
-});
+const ButtonExample = (props) => {
+  return (
+    <ThemeProvider>
+      <Button variant="contained" {...props}/>
+    </ThemeProvider>
+  );
+};
 
 export default ButtonExample;

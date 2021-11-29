@@ -5,7 +5,10 @@
     "lint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
     "test": "jest --config ./config/jest.config.js",
     "test:watch": "jest --config ./config/jest.config.js --watch-all",
-    "test:coverage": "jest --config ./config/jest.config.js --coverage"
+    "test:coverage": "jest --config ./config/jest.config.js --coverage",
+    "storybook": "start-storybook -p 6006",
+    "dev": "start-storybook -p 5555",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
@@ -15,6 +18,14 @@
     "@babel/preset-react": "7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.1",
+    "@mui/styled-engine-sc": "^5.1.0",
+    "@storybook/addon-actions": "^6.4.0",
+    "@storybook/addon-essentials": "^6.4.0",
+    "@storybook/addon-links": "^6.4.0",
+    "@storybook/react": "^6.4.0",
     "@testing-library/dom": "8.11.1",
     "@testing-library/jest-dom": "5.15.0",
     "@testing-library/react": "12.1.2",
@@ -37,9 +48,11 @@
     "eslint-plugin-testing-library": "5.0.0",
     "husky": ">=6",
     "jest": "27.3.1",
+    "lerna": "^4.0.0",
     "prettier": "2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "styled-components": "^5.3.3",
     "tsconfig-paths-webpack-plugin": "3.5.1",
     "typescript": "4.4.4",
     "webpack": "5.64.0",
@@ -47,5 +60,6 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {}
 }
