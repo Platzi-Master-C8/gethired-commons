@@ -1,3 +1,5 @@
+import { ThemeProvider } from '@master-c8/theme';
+
 import ButtonExample from './ButtonExample';
 
 export default {
@@ -5,4 +7,10 @@ export default {
   component: ButtonExample,
 };
 
-export const Default = () => <ButtonExample>Button Dafault</ButtonExample>;
+export const Default = () => {
+  return (
+    <ThemeProvider>
+      <ButtonExample variant="contained">Button Dafault</ButtonExample>
+    </ThemeProvider>
+  );
+};
