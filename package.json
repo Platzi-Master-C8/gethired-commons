@@ -6,7 +6,7 @@
     "test": "jest --config ./config/jest.config.js",
     "test:watch": "jest --config ./config/jest.config.js --watch-all",
     "test:coverage": "jest --config ./config/jest.config.js --coverage",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -c .storybook watch-css -s ./packages/components/src",
     "dev": "start-storybook -p 5555",
     "build-storybook": "build-storybook"
   },

@@ -70,4 +70,28 @@ export interface THEME {
       main: string;
     };
   };
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          boxShadow: string
+        },
+        sizeSmall: {
+          fontSize: string,
+          padding: string
+        },
+        sizeMedium: {
+          fontSize: string,
+          padding: string
+        },
+        sizeLarge: {
+          fontSize: string,
+          padding: string
+        },
+        containedPrimary: {
+          background: string
+        },
+      },
+    },
+  },
 }
