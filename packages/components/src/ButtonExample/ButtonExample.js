@@ -13,5 +13,4 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['contained', 'outlined']),
 };
 
-
 export default Button;

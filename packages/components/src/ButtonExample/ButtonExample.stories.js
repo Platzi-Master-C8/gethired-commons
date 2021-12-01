@@ -1,3 +1,5 @@
+import { ThemeProvider } from '@master-c8/theme';
+
 import ButtonExample from './ButtonExample';
 
 export default {
