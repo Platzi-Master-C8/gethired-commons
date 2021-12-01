@@ -45,7 +45,7 @@
     }
   },
   "dependencies": {
-    "@master-c8/theme": "0.1.4",
+    "@master-c8/theme": "0.1.2",
     "prop-types": "15.7.2"
   },
   "publishConfig": {
