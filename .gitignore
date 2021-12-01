@@ -207,5 +207,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+yarn.lock
 # End of https://www.toptal.com/developers/gitignore/api/react,node,macos,linux,windows

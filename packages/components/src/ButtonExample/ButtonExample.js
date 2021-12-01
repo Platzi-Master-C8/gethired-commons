@@ -1,12 +1,17 @@
-import { Button } from '@mui/material';
-import { ThemeProvider } from '@master-c8/theme';
+import { Button as ButtonMui } from '@mui/material';
+import PropTypes from 'prop-types';
 
-const ButtonExample = (props) => {
+const Button = ({ ...props }) => {
   return (
-    <ThemeProvider>
-      <Button variant="contained" {...props}/>
-    </ThemeProvider>
+    <ButtonMui {...props}/>
   );
 };
 
-export default ButtonExample;
+Button.propTypes = {
+  color: PropTypes.oneOf(['primary', 'secondary']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  variant: PropTypes.oneOf(['contained', 'outlined']),
+};
+
+
+export default Button;
