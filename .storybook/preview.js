@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'emotion-theming';
 import { createTheme } from "@mui/material/styles";
 
-import {  THEME } from '@master-c8/theme';
+import { THEME } from '@master-c8/theme';
 
 const getHiredTheme = createTheme(THEME);
 

@@ -1,17 +1,19 @@
 {
-  "name": "@master-c8/commons",
-  "version": "0.0.4",
+  "name": "@master-c8/icons",
+  "version": "0.1.0",
   "private": false,
-  "description": "Platzi Master C8 commons",
+  "description": "Platzi Master C8 Theme",
   "main": "./dist/index",
   "author": "Platzi Master C8",
   "license": "MIT",
   "keywords": [
     "platzi master",
+    "c8",
     "react",
     "gethired-commons",
     "platzi",
-    "components"
+    "theme",
+    "icons"
   ],
   "contributors": [
     {
@@ -26,7 +28,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Platzi-Master-C8/gethired-commons.git",
-    "directory": "packages/components"
+    "directory": "packages/theme"
   },
   "bugs": {
     "url": "https://github.com/Platzi-Master-C8/gethired-commons/issues"
@@ -45,9 +47,8 @@
     }
   },
   "dependencies": {
-    "@master-c8/theme": "0.1.3",
-    "@master-c8/icons": "0.1.0",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "@mui/material": "^5.2.1"
   },
   "publishConfig": {
     "access": "public"
@@ -56,3 +57,4 @@
     "node": ">=12.0.0"
   }
 }
+
