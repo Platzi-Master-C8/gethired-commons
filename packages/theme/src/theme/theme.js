@@ -82,8 +82,12 @@ export const THEME = {
       },
     },
     MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+      },
       styleOverrides: {
         root: {
+          borderRadius: '6px',
           boxShadow: 'none',
         },
         sizeSmall: {
