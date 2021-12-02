@@ -6,7 +6,17 @@ export default {
   parameters: { __sb: { fd: 'row' } },
   argTypes: {
     color: {
-      options: ['primary', 'secondary', 'error', 'info', 'success', 'warning', 'inherit', 'action', 'disabled'],
+      options: [
+        'primary',
+        'secondary',
+        'error',
+        'info',
+        'success',
+        'warning',
+        'inherit',
+        'action',
+        'disabled',
+      ],
       control: { type: 'select' },
       table: {
         category: 'Sizes',
