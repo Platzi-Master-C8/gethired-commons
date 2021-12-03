@@ -1,5 +1,3 @@
-import { ThemeProvider } from '@master-c8/theme';
-
 import ButtonExample from './ButtonExample';
 
 export default {
@@ -7,8 +5,7 @@ export default {
   component: ButtonExample,
   parameters: { __sb: { fd: 'row' } },
   argTypes: {
-    color: {
-    },
+    color: {},
     size: {
       options: ['small', 'large'],
       control: { type: 'select' },
@@ -19,26 +16,20 @@ export default {
   },
 };
 
-const Template = (args) => <ButtonExample {...args}/>;
+const Template = (args) => <ButtonExample {...args} />;
 
 export const Primary = Template.bind({});
 
 Primary.args = {
   children: 'BUTTON',
-  variant: 'contained'
+  variant: 'contained',
 };
 
-const getListTemplate = (Component) => ({ items, ...args }) => 
-  items.map((item, index) => {
-    return (
-      <Component
-        key={index}
-        {...args}
-        {...item}
-      />
-    );
-  });
-
+const getListTemplate = (Component) =>
+  ({ items, ...args }) =>
+    items.map((item, index) => {
+      return <Component key={index} {...args} {...item} />;
+    });
 
 const ListTemplate = getListTemplate(ButtonExample);
 
@@ -48,7 +39,7 @@ Sizes.args = {
   items: ['small', 'medium', 'large'].map((size) => ({ size })),
   children: 'BUTTON',
   variant: 'contained',
-  color: 'primary'
+  color: 'primary',
 };
 
 export const Colors = ListTemplate.bind({});
