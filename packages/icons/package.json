@@ -1,0 +1,60 @@
+{
+  "name": "@master-c8/icons",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Platzi Master C8 Theme",
+  "main": "./dist/index",
+  "author": "Platzi Master C8",
+  "license": "MIT",
+  "keywords": [
+    "platzi master",
+    "c8",
+    "react",
+    "gethired-commons",
+    "platzi",
+    "theme",
+    "icons"
+  ],
+  "contributors": [
+    {
+      "name": "Kevin Cruz",
+      "github": "https://github.com/kevfarid"
+    },
+    {
+      "name": "Yadu Lopez",
+      "github": "https://github.com/yadurani"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platzi-Master-C8/gethired-commons.git",
+    "directory": "packages/theme"
+  },
+  "bugs": {
+    "url": "https://github.com/Platzi-Master-C8/gethired-commons/issues"
+  },
+  "homepage": "https://github.com/Platzi-Master-C8/gethired-commons",
+  "scripts": {
+    "build": "NODE_ENV=production && rm -rf ./dist && mkdir dist && npx babel --config-file ../../babel.config src/ --out-dir dist --copy-files --ignore '**/*.spec.js' --ignore '**/*.stories.@(js|jsx|ts|tsx)' --no-copy-ignored"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0",
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "@mui/material": "^5.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
+

@@ -72,4 +72,41 @@ export const THEME = {
       main: COLORS.error,
     },
   },
+  components: {
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          fill: 'none',
+          stroke: 'currentColor',
+        },
+      },
+    },
+    MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+      },
+      styleOverrides: {
+        root: {
+          borderRadius: '6px',
+          boxShadow: 'none',
+        },
+        sizeSmall: {
+          fontSize: '12px',
+          padding: '3px 10px',
+        },
+        sizeMedium: {
+          fontSize: '14px',
+          padding: '7px 16px',
+        },
+        sizeLarge: {
+          fontSize: '16px',
+          padding: '11px 22px',
+        },
+        containedPrimary: {
+          background:
+            'linear-gradient(90deg, rgba(95, 100, 255, 0.7) 0%, rgba(174, 78, 255, 0.85) 100%)',
+        },
+      },
+    },
+  },
 };

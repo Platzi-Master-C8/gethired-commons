@@ -105,5 +105,11 @@ module.exports = {
         'testing-library/no-node-access': 'off'
       }
     },
+    {
+      files: ['./packages/**/src/**/index.js', './packages/**/src/**/index.d.ts'],
+      'rules': {
+        'no-restricted-exports': 'off'
+      }
+    }
   ]
 };

@@ -1,8 +1,16 @@
-import { Button } from '@mui/material';
-import { ThemeProvider } from '@master-c8/theme';
-import { forwardRef } from 'react';
+import { Button as ButtonMui } from '@mui/material';
+import PropTypes from 'prop-types';
 
-const ButtonExample = forwardRef(function ButtonExample(props, ref) {
-  return <Button ref={ref} {...props} />;
-});
-export default ButtonExample;
+const Button = ({ ...props }) => {
+  return (
+    <ButtonMui {...props}/>
+  );
+};
+
+Button.propTypes = {
+  color: PropTypes.oneOf(['primary', 'secondary']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  variant: PropTypes.oneOf(['contained', 'outlined']),
+};
+
+export default Button;

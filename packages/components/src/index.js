@@ -1,1 +1,1 @@
-export { default as ButtonExample } from './ButtonExample';
+export { default as Logotype } from './Logotype';
