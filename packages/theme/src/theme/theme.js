@@ -59,6 +59,9 @@ export const THEME = {
     },
   },
   palette: {
+    primary: {
+      main: COLORS.contrast1,
+    },
     secondary: {
       main: COLORS.secondary,
     },
@@ -89,6 +92,7 @@ export const THEME = {
         root: {
           borderRadius: '6px',
           boxShadow: 'none',
+          textTransform: 'initial'
         },
         sizeSmall: {
           fontSize: '12px',
