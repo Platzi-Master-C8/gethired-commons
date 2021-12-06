@@ -1,6 +1,6 @@
 {
   "name": "@master-c8/theme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "description": "Platzi Master C8 Theme",
   "main": "./dist/index",
