@@ -1,0 +1,17 @@
+import { forwardRef } from 'react';
+import { SvgIcon } from '@mui/material';
+
+const Switch = forwardRef(function Switch(props, ref) {
+  return (
+    <SvgIcon {...props} {...ref}>
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+      />
+    </SvgIcon>
+  );
+});
+
+export default Switch;
