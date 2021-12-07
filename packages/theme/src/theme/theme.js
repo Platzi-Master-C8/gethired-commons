@@ -110,6 +110,10 @@ export const THEME = {
           background:
             'linear-gradient(90deg, rgba(95, 100, 255, 0.7) 0%, rgba(174, 78, 255, 0.85) 100%)',
         },
+        outlinedPrimary: {
+          color: COLORS.contrast1,
+          borderColor: COLORS.contrast1
+        }
       },
     },
   },

@@ -13,7 +13,7 @@ import { BriefCase } from '@master-c8/icons';
 const Questions = () => (
   <ul>
     <li>
-      Jobs <BriefCase width="" />
+      Jobs <BriefCase />
     </li>
   </ul>
 );
