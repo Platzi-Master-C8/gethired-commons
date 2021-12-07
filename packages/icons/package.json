@@ -1,8 +1,8 @@
 {
   "name": "@master-c8/icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
-  "description": "Platzi Master C8 Theme",
+  "description": "Platzi Master C8 Icons",
   "main": "./dist/index",
   "author": "Platzi Master C8",
   "license": "MIT",
