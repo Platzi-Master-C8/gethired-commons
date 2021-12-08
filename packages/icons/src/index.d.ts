@@ -33,3 +33,9 @@ export * from './ChevronUp';
 
 export { default as ChevronDown } from './ChevronDown';
 export * from './ChevronDown';
+
+export { default as Currency } from './Currency';
+export * from './Currency';
+
+export { default as Switch } from './Switch';
+export * from './Switch';
