@@ -8,7 +8,7 @@
     "test:coverage": "jest --config ./config/jest.config.js --coverage",
     "storybook": "start-storybook -p 6006 -c .storybook watch-css -s ./packages/components/src",
     "dev": "start-storybook -p 5555",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o docs",
     "precommit": "lint-staged"
   },
   "devDependencies": {
@@ -54,6 +54,7 @@
     "prettier": "2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-router-dom": "^6.0.2",
     "styled-components": "^5.3.3",
     "tsconfig-paths-webpack-plugin": "3.5.1",
     "typescript": "4.4.4",

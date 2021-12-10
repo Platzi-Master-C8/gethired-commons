@@ -1,0 +1,35 @@
+name: Storybook deploy
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile && cd packages/components && npx lerna bootstrap
+
+      - name: Build the theme module
+        run: cd packages/theme && npx lerna bootstrap && yarn build
+
+      - name: Build the components module
+        run: cd packages/components && npx lerna bootstrap && yarn build
+
+      - name: Build the icons module
+        run: cd packages/icons && npx lerna bootstrap && yarn build
+
+      - name: Build StoryBook
+        run: yarn build-storybook
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: docs

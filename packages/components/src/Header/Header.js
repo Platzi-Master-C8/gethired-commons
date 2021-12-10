@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import { Button, Container } from '@mui/material';
 
 import { Logotype } from '@master-c8/commons';
@@ -10,7 +12,9 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children }) => {
   return (
     <HeaderContent>
       <Container>
-        <Logotype width={140} />
+        <Link>
+          <Logotype width={140} />
+        </Link>
         {!isLogged && (
           <BtnGroup>
             <Button variant="outlined" size="large" onClick={onClickLogin} type="button">
