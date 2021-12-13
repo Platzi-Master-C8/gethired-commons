@@ -8,11 +8,11 @@ import { Logotype } from '@master-c8/commons';
 
 import { HeaderContent, BtnGroup } from './Header.styles';
 
-const Header = ({ onClickLogin, onClickSignup, isLogged, children }) => {
+const Header = ({ onClickLogin, onClickSignup, isLogged, children, route }) => {
   return (
     <HeaderContent>
       <Container>
-        <Link>
+        <Link to={route}>
           <Logotype width={140} />
         </Link>
         {!isLogged && (
@@ -36,11 +36,13 @@ Header.propTypes = {
   isLogged: PropTypes.bool,
   onClickLogin: PropTypes.func.isRequired,
   onClickSignup: PropTypes.func.isRequired,
+  route: PropTypes.string,
 };
 
 Header.defaultProps = {
   isLogged: false,
   children: null,
+  route: '',
 };
 
 export default Header;

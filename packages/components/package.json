@@ -1,6 +1,6 @@
 {
   "name": "@master-c8/commons",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "description": "Platzi Master C8 commons",
   "main": "./dist/index",
