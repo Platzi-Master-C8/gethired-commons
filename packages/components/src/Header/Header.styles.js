@@ -9,7 +9,10 @@ export const HeaderContent = styled('header')(
     height: 80px;
     width: 100%;
     img {
-      width: 110px;
+      width: 160px;
+      @media (max-width: 560px) {
+        width: 110px;
+      }
     }
     .MuiContainer-root {
       align-items: center;
