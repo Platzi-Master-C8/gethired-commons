@@ -1,6 +1,6 @@
 {
   "name": "@master-c8/commons",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "private": false,
   "description": "Platzi Master C8 commons",
   "main": "./dist/index",
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@master-c8/theme": "0.1.9",
-    "@master-c8/icons": "0.1.2",
+    "@master-c8/icons": "0.1.3",
     "prop-types": "15.7.2"
   },
   "publishConfig": {
