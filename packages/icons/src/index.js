@@ -12,3 +12,4 @@ export { default as ChevronUp } from './ChevronUp';
 export { default as ChevronDown } from './ChevronDown';
 export { default as Currency } from './Currency';
 export { default as Switch } from './Switch';
+export { default as Close } from './Close';

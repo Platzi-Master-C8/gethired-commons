@@ -39,3 +39,6 @@ export * from './Currency';
 
 export { default as Switch } from './Switch';
 export * from './Switch';
+
+export { default as Close } from './Close';
+export * from './Close';

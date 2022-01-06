@@ -1,6 +1,6 @@
 {
   "name": "@master-c8/icons",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "description": "Platzi Master C8 Icons",
   "main": "./dist/index",
