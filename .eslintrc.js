@@ -6,7 +6,7 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    'jest/globals': true
+    'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
@@ -19,12 +19,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 7,
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'jest',
-    'testing-library'
-  ],
+  plugins: ['react', '@typescript-eslint', 'jest', 'testing-library'],
   rules: {
     '@typescript-eslint/dot-notation': 'off',
     '@typescript-eslint/no-implied-eval': 'off',
@@ -34,10 +29,10 @@ module.exports = {
     'max-len': ['error', { code: 200, ignoreTemplateLiterals: true, ignoreStrings: true }],
     'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': 'off',
-    'semi': 'error',
+    semi: 'error',
     'object-curly-spacing': 'error',
-    'indent': ['error', 2],
-    'quotes': ['error', 'single', { 'allowTemplateLiterals': true, 'avoidEscape': true }],
+    indent: ['error', 2],
+    quotes: ['error', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
     'space-before-blocks': 'error',
     'no-param-reassign': 'off',
     'consistent-this': ['error', 'self'],
@@ -98,18 +93,18 @@ module.exports = {
       },
     },
     {
-      'files': ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      'extends': ['plugin:testing-library/react'],
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
       rules: {
         'testing-library/prefer-screen-queries': 'off',
-        'testing-library/no-node-access': 'off'
-      }
+        'testing-library/no-node-access': 'off',
+      },
     },
     {
       files: ['./packages/**/src/**/index.js', './packages/**/src/**/index.d.ts'],
-      'rules': {
-        'no-restricted-exports': 'off'
-      }
-    }
-  ]
+      rules: {
+        'no-restricted-exports': 'off',
+      },
+    },
+  ],
 };

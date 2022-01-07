@@ -9,7 +9,10 @@ export const HeaderContent = styled('header')(
     height: 80px;
     width: 100%;
     img {
-      width: 110px;
+      width: 160px;
+      @media (max-width: 560px) {
+        width: 110px;
+      }
     }
     .MuiContainer-root {
       align-items: center;
@@ -24,5 +27,20 @@ export const BtnGroup = styled('div')`
   gap: 1rem;
   @media (max-width: 767px) {
     display: none;
+  }
+`;
+
+export const WrapperMenu = styled('div')`
+  @media (max-width: 900px) {
+    transform: ${({ open }) => (open ? 'translateX(0%)' : 'translateX(100%)')};
+    transition: transform ease 0.3s;
+    background: white;
+    position: fixed;
+    top: 81px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    z-index: 2;
   }
 `;

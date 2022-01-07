@@ -1,4 +1,5 @@
 import Header from './Header';
+import HeaderJob from './HeaderJob';
 
 export default {
   title: 'Design System/Commons/Header',
@@ -25,3 +26,5 @@ export const HeaderLogged = () => (
     <div>Children</div>
   </Header>
 );
+
+export const HeaderJobs = () => <HeaderJob />;
