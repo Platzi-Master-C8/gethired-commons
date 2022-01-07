@@ -29,3 +29,18 @@ export const BtnGroup = styled('div')`
     display: none;
   }
 `;
+
+export const WrapperMenu = styled('div')`
+  @media (max-width: 900px) {
+    transform: ${({ open }) => (open ? 'translateX(0%)' : 'translateX(100%)')};
+    transition: transform ease 0.3s;
+    background: white;
+    position: fixed;
+    top: 81px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    z-index: 2;
+  }
+`;

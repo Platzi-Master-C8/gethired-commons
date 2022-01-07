@@ -34,8 +34,8 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children, route }) => {
 Header.propTypes = {
   children: PropTypes.node,
   isLogged: PropTypes.bool,
-  onClickLogin: PropTypes.func.isRequired,
-  onClickSignup: PropTypes.func.isRequired,
+  onClickLogin: PropTypes.func,
+  onClickSignup: PropTypes.func,
   route: PropTypes.string,
 };
 
