@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import Header from './Header';
 import HeaderJob from './HeaderJob';
 
@@ -13,7 +14,13 @@ export default {
   },
 };
 
-const Template = (args) => <Header {...args} />;
+const PublicComponent = () => (
+  <Button variant="outlined" size="large" type="button">
+    Public Component
+  </Button>
+);
+
+const Template = (args) => <Header notLogeedComponent={PublicComponent} {...args} />;
 
 export const HeaderSignin = Template.bind({});
 
@@ -22,7 +29,7 @@ HeaderSignin.args = {
 };
 
 export const HeaderLogged = () => (
-  <Header isLogged>
+  <Header isLogged notLogeedComponent={PublicComponent}>
     <div>Children</div>
   </Header>
 );
