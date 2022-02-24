@@ -17,8 +17,8 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children, route, notLog
         <Link to={route}>
           <Logotype width={140} />
         </Link>
-        {notLogeedComponent && <NotLogeedComponent />}
         <BtnGroup>
+          {notLogeedComponent && <NotLogeedComponent />}
           {!isLogged && (
             <Fragment>
               <Button variant="outlined" size="large" onClick={onClickLogin} type="button">
@@ -29,8 +29,8 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children, route, notLog
               </Button>
             </Fragment>
           )}
+          {isLogged && children}
         </BtnGroup>
-        {isLogged && children}
       </Container>
     </HeaderContent>
   );

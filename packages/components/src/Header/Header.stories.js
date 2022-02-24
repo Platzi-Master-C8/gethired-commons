@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import Header from './Header';
 import HeaderJob from './HeaderJob';
 
@@ -14,11 +13,7 @@ export default {
   },
 };
 
-const PublicComponent = () => (
-  <Button variant="outlined" size="large" type="button">
-    Public Component
-  </Button>
-);
+const PublicComponent = () => <div>Public Component</div>;
 
 const Template = (args) => <Header notLogeedComponent={PublicComponent} {...args} />;
 
