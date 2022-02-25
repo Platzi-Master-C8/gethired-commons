@@ -13,7 +13,9 @@ export default {
   },
 };
 
-const Template = (args) => <Header {...args} />;
+const PublicComponent = () => <div>Public Component</div>;
+
+const Template = (args) => <Header notLogeedComponent={PublicComponent} {...args} />;
 
 export const HeaderSignin = Template.bind({});
 
@@ -22,7 +24,7 @@ HeaderSignin.args = {
 };
 
 export const HeaderLogged = () => (
-  <Header isLogged>
+  <Header isLogged notLogeedComponent={PublicComponent}>
     <div>Children</div>
   </Header>
 );

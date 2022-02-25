@@ -25,6 +25,7 @@ export const HeaderContent = styled('header')(
 export const BtnGroup = styled('div')`
   display: inline-flex;
   gap: 1rem;
+  align-items: center;
   @media (max-width: 767px) {
     display: none;
   }

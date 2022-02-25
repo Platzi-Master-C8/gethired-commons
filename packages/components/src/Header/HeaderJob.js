@@ -15,13 +15,13 @@ import Header from './Header';
 
 import { WrapperMenu } from './Header.styles';
 
-const HeaderJob = () => {
+const HeaderJob = (props) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
 
   return (
-    <Header isLogged>
+    <Header isLogged {...props}>
       <IconButton
         aria-label="menu"
         sx={{ display: { sm: 'inherit', md: 'none' } }}
