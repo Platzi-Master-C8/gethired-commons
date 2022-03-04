@@ -22,12 +22,26 @@ export const HeaderContent = styled('header')(
   `,
 );
 
+export const BtnGroupComp = styled('div')`
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  @media (max-width: 767px) {
+    gap: 0.5rem;
+  }
+`;
+
 export const BtnGroup = styled('div')`
   display: inline-flex;
   gap: 1rem;
   align-items: center;
   @media (max-width: 767px) {
-    display: none;
+    gap: 0.5rem;
+    .btn-general {
+      padding: 8px 15px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
   }
 `;
 

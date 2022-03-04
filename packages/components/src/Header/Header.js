@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
@@ -6,8 +7,7 @@ import { Button, Container } from '@mui/material';
 
 import { Logotype } from '@master-c8/commons';
 
-import React, { Fragment } from 'react';
-import { HeaderContent, BtnGroup } from './Header.styles';
+import { HeaderContent, BtnGroup, BtnGroupComp } from './Header.styles';
 
 const Header = ({ onClickLogin, onClickSignup, isLogged, children, route, notLogeedComponent }) => {
   const NotLogeedComponent = notLogeedComponent || null;
@@ -17,20 +17,32 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children, route, notLog
         <Link to={route}>
           <Logotype width={140} />
         </Link>
-        <BtnGroup>
+        <BtnGroupComp>
           {notLogeedComponent && <NotLogeedComponent />}
           {!isLogged && (
-            <Fragment>
-              <Button variant="outlined" size="large" onClick={onClickLogin} type="button">
+            <BtnGroup>
+              <Button
+                className="btn-general"
+                variant="outlined"
+                size="large"
+                onClick={onClickLogin}
+                type="button"
+              >
                 Login
               </Button>
-              <Button variant="contained" size="large" onClick={onClickSignup} type="button">
+              <Button
+                className="btn-general"
+                variant="contained"
+                size="large"
+                onClick={onClickSignup}
+                type="button"
+              >
                 Sign Up
               </Button>
-            </Fragment>
+            </BtnGroup>
           )}
           {isLogged && children}
-        </BtnGroup>
+        </BtnGroupComp>
       </Container>
     </HeaderContent>
   );
