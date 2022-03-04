@@ -51,7 +51,7 @@ const Header = ({ onClickLogin, onClickSignup, isLogged, children, route, notLog
 Header.propTypes = {
   children: PropTypes.node,
   isLogged: PropTypes.bool,
-  notLogeedComponent: PropTypes.node,
+  notLogeedComponent: PropTypes.any,
   onClickLogin: PropTypes.func,
   onClickSignup: PropTypes.func,
   route: PropTypes.string,
